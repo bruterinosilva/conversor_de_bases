@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./assets/css/img/fundo.jpg");
+    width: 100%;
+    font-family: 'Lexend Deca', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background: rgb(128, 120, 244);
+    background: linear-gradient(90deg, rgba(128, 120, 244, 1) 14%, rgba(117, 102, 248, 1) 54%, rgba(107, 94, 244, 1) 94%);
+    border-bottom: 6px solid #4C317B;
+}
+
+.navbar {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: flex-start
+}
+
+.titulo h1 {
+    display: flex;
+    /* justify-content: center; */
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 30px;
+    justify-content: flex-start;
+}
+
+.instrucao p {
+    text-align: center;
+    padding: 5px 125px 2px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.div_conteudo {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.decimal {
+    margin: 20px 0;
+}
+
+.box {
+    background-image: url("./assets/css/img/popup.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 700px;
+    height: 398px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#input_numero {
+    background-color: white;
+    border: 6px solid rainbow;
+    border-radius: 25px;
+    padding: 8px 2px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    animation: rainbow 5s linear infinite;
+}
+
+.btn_conversao {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn {
+    border: 3px solid #8f85b9;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: #8078f4;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0 5px;
+    transition: 0.7s;
+    box-shadow: #4C317B;
+}
+
+.btn:hover {
+    transform: translateZ(-10px);
+    box-shadow: 0px 5px 5px 0px #8f85b9;
+    color: white;
+    background-color: #4C317B;
+    border: 3px solid #8078f4;
+}
+
+.resultados {
+    height: 20px;
+}
+
+#resposta {
+    font-weight: bold;
+    color: #4C317B;
+    padding: 0px 100px;
+}
+
+@keyframes rainbow{
+    100%,0%{
+        border: 6px solid rgb(255,0,0);
+    }
+    8%{
+        border: 6px solid rgb(255,127,0);
+    }
+    16%{
+        border: 6px solid rgb(255,255,0);
+    }
+    25%{
+        border: 6px solid rgb(127,255,0);
+    }
+    33%{
+        border: 6px solid rgb(0,255,0);
+    }
+    41%{
+        border: 6px solid rgb(0,255,127);
+    }
+    50%{
+        border: 6px solid rgb(0,255,255);
+    }
+    58%{
+        border: 6px solid rgb(0,127,255);
+    }
+    66%{
+        border: 6px solid rgb(0,0,255);
+    }
+    75%{
+        border: 6px solid rgb(127,0,255);
+    }
+    83%{
+        border: 6px solid (255,0,255);
+    }
+    91%{
+        border: 6px solid rgb(255,0,127);
+    }
+}
