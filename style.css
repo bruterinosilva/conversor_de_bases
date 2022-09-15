@@ -105,6 +105,7 @@ header {
     margin: 0 5px;
     transition: 0.7s;
     box-shadow: #4C317B;
+    width: 120px;
 }
 
 .btn:hover {
